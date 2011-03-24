@@ -16,30 +16,30 @@
 	<property name="project.src.dir" value="src" />
 	<property name="project.ext-lib.dir" value="ext-lib" />
 
-	<!--WebApp Dirs -->
+	<!--WebApp Lib Dirs -->
+	<property name="inc.webApp.lib.dir" value="yes" />
 
 	<!--Internal Only -->
 
 	<property name="jsp.dir" value="jsp" />
 	<property name="project.webapp.dir" value="WebApp" />
+	<property name="lib.dir" value="lib" />
 	<property name="project.jsp.dir" value="${project.webapp.dir}/${jsp.dir}" />
+	
 
 	<!-- Possibly External Content -->
 
 	<property name="config.dir" value="config" />
 	<property name="html.dir" value="html" />
-	<!--<property name="jsp-app.dir" value="jsp-app" />-->
 	<property name="css.dir" value="css" />
 	<property name="images.dir" value="images" />
 	<property name="jscripts.dir" value="jscripts" />
 	<property name="xslt.dir" value="xslt" />
-	<!--<property name="ant.dir" value="Ant" />-->
 
 	<!--Project paths -->
 
 	<property name="project.config.dir" value="${project.webapp.dir}/${config.dir}" />
 	<property name="project.html.dir" value="${project.webapp.dir}/${html.dir}" />
-	<!--<property name="project.jsp-app.dir" value="${project.webapp.dir}/${jsp-app.dir}" />-->
 	<property name="project.css.dir" value="${project.webapp.dir}/${css.dir}" />
 	<property name="project.images.dir" value="${project.webapp.dir}/${images.dir}" />
 	<property name="project.jscripts.dir" value="${project.webapp.dir}/${jscripts.dir}" />
@@ -87,7 +87,7 @@
 	<!--build classpath-->
 	<path id="build.cp">
 		<pathelement location="${build.classes.dir}" />
-		<fileset dir="${build.lib.dir}">
+		<fileset dir="${lib.dir}">
 			<include name="*.jar" />
 		</fileset>
 		<fileset dir="${project.webapp.dir}/ext-lib">
@@ -136,7 +136,6 @@
 		
 		<property name="src.config.dir" value="${project.config.dir}" />
 		<property name="src.html.dir" value="${project.html.dir}" />
-		<!--<property name="src.jsp-app.dir" value="${project.jsp-app.dir}" />-->
 		<property name="src.css.dir" value="${project.css.dir}" />
 		<property name="src.images.dir" value="${project.images.dir}" />
 		<property name="src.applications.dir" value="${project.applications.dir}" />
@@ -168,6 +167,21 @@
 
 		<!-- copy all the files to build -->
 		<mkdir dir="${build.log.dir}" />
+		<!-- If including libs jars copy them to build.lib.dir-->
+		<if>
+			<equals arg1="${inc.webApp.lib.dir}" arg2="yes" />
+			<then>
+				<echo>"Copying Lib Jars to web-inf/lib"</echo>
+				<copy todir="${build.lib.dir}">
+					<fileset dir="${lib.dir}">
+					</fileset>
+				</copy>
+			</then>
+			<else>
+				<echo>"Not Copying Lib Jars to web-inf/lib"</echo>
+			</else>
+		</if>
+		
 	</target>
 
 
@@ -200,10 +214,13 @@
 			<fileset dir="${project.jsp.dir}" />
 
 
-			<lib dir="${build.lib.dir}">
-			</lib>
-			<lib dir="${build.Web-Inf.dir}/lib">
-			</lib>
+			<lib dir="${build.lib.dir}"/>
+			<!--<lib dir="${build.Web-Inf.dir}/lib"/> -->
+
+			
+			
+
+			
 			<webinf dir="${build.Web-Inf.dir}">
 				<exclude name="web.xml" />
 			</webinf>
@@ -218,7 +235,6 @@
 			<zipfileset dir="${src.config.dir}" prefix="${config.dir}" /> 
 			<zipfileset dir="${src.css.dir}" prefix="${css.dir}" />
 			<zipfileset dir="${src.html.dir}" prefix="${html.dir}" />
-			<!--<zipfileset dir="${src.jsp-app.dir}" prefix="${jsp-app.dir}" />-->
 			<zipfileset dir="${src.xslt.dir}" prefix="${xslt.dir}" />
 
 		</war>
