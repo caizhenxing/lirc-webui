@@ -1,0 +1,28 @@
+<settings>
+	<irsendPath irsend="irsend" irsendPath="D:/Data/ATestXML/test/Lirc/lirc/irsend"
+		isOK="true" lircDir="D:/Data/ATestXML/test/Lirc/lirc" >
+				<errors>
+			<error errorText="BOB IRSEND" />
+			<error errorText="Can't read File" />
+			<error errorText="Can't write File" />
+			<error errorText="xmlPath = D:/Data/ATestXML/test/Lirc/xml/test.xml" />
+		</errors>
+		</irsendPath>
+	<xmlDir isOK="true" xmlDir="D:/Data/ATestXML/test/Lirc/xml" >
+			<errors>
+			<error errorText="BOB XML DIR" />
+			<error errorText="Can't read File" />
+			<error errorText="Can't write File" />
+			<error errorText="xmlPath = D:/Data/ATestXML/test/Lirc/xml/test.xml" />
+		</errors>
+	</xmlDir>
+	<xmlPath isOK="false" xmlFile="test.xml"
+		xmlPath="D:/Data/ATestXML/test/Lirc/xml/test.xml">
+		<errors>
+			<error errorText="File doesn't exist" />
+			<error errorText="Can't read File" />
+			<error errorText="Can't write File" />
+			<error errorText="xmlPath = D:/Data/ATestXML/test/Lirc/xml/test.xml" />
+		</errors>
+	</xmlPath>
+</settings>

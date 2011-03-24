@@ -1,0 +1,37 @@
+*{font-family: sans-serif; font-size: 18pt;} 
+
+input.xfInput {width: 100%;}
+
+input.xfError{width: 100%;background-color: red;font-weight: bold}
+
+.HeadingTR{background:#E5E5E5;}
+.Heading{font-size: 18px;
+        line-height: normal;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        color: #003366;
+        border-bottom: 1px solid #3c78b5;
+        padding: 2px;
+        margin: 36px 0px 4px 0px;}
+
+
+.widthCol100{width: 100%; vertical-align: top;}
+.widthCol10{width: 10%; vertical-align: top;}
+
+.StdLabel{font-weight: bold;font-size: 18px;}
+.LabelLarge{font-weight: bold;font-size: 32px;}
+
+.errTxt{color:red}
+
+.errLabel{font-weight: bold;font-size: 16px;color:red}
+
+.divCenter{text-align:center;}
+.docTitle{font-size:24.0pt;font-family:Arial;color:darkblue;font-weight: bold;text-align:center;}
+.stdTable{vertical-align:top; border:thin solid #BCD884;width:100%;}
+
+.green{background-color: green;}
+.blue{background-color: blue;}
+.red{background-color: red;}
+.yellow{background-color: yellow;}
+
+.td-pad{padding: 5px ; text-align:center;}

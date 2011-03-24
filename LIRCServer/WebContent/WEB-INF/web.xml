@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 
+	2.2//EN" "http://java.sun.com/j2ee/dtds/web-app_2_2.dtd"> -->
+<!-- <!DOCTYPE web-app PUBLIC "-//Sun Microsystems, Inc.//DTD Web Application 
+	2.3//EN" "http://java.sun.com/dtd/web-app_2_3.dtd"> -->
+
+<web-app version="2.3">
+
+
+	<!--<web-app xmlns="http://java.sun.com/xml/ns/j2ee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
+		xsi:schemaLocation="http://java.sun.com/xml/ns/j2ee http://java.sun.com/xml/ns/j2ee/web-app_2_4.xsd" 
+		version="2.4"> -->
+	<display-name>Lirc Server</display-name>
+
+	<welcome-file-list>
+		<welcome-file>index.jsp</welcome-file>
+	</welcome-file-list>
+
+	<servlet>
+		<servlet-name>xmljsp</servlet-name>
+		<jsp-file>/xml.jsp</jsp-file>
+		<!--  <init-param>
+			<param-name>hello</param-name>
+			<param-value>test</param-value>
+		</init-param> -->
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>xmljsp</servlet-name>
+		<url-pattern>/xml</url-pattern>
+	</servlet-mapping>
+
+
+
+	<!-- <servlet> <servlet-name>XSLTEndPoint</servlet-name> <servlet-class> 
+		org.xmlprocess.servlets.XSLTEndPoint </servlet-class> </servlet> <servlet-mapping> 
+		<servlet-name>XSLTEndPoint</servlet-name> <url-pattern>/xsltEndPoint</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>CadFileGet</servlet-name> <servlet-class> 
+		org.xmlprocess.servlets.CadFileGet </servlet-class> </servlet> <servlet-mapping> 
+		<servlet-name>CadFileGet</servlet-name> <url-pattern>/fileGet/*</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>ChibaV2Render</servlet-name> <servlet-class>org.xmlprocess.servlets.TempChibaV2Servlet</servlet-class> 
+		</servlet> <servlet-mapping> <servlet-name>ChibaV2Render</servlet-name> <url-pattern>/renderXForm</url-pattern> 
+		</servlet-mapping> <servlet> <servlet-name>PeriodicCleanUp</servlet-name> 
+		<servlet-class> org.xmlprocess.servlets.PeriodicCleanUp </servlet-class> 
+		<load-on-startup /> </servlet> -->
+
+	<context-param>
+		<param-name>mainProps</param-name>
+		<!-- <param-value>/home/adamf/LircTest/test.props</param-value> -->
+		<!-- <param-value>config/main.props</param-value> -->
+		<param-value>config/test.props</param-value>
+		<!-- <description> The main properties configuration file </description> -->
+	</context-param>
+
+	<context-param>
+		<param-name>settingsXSLT</param-name>
+		<param-value>xslt/config2html.xslt</param-value>
+		<description> The settings to HTML xslt file </description>
+	</context-param>
+
+	<context-param>
+		<param-name>mainXSLT</param-name>
+		<param-value>xslt/lircXml2html.xslt</param-value>
+		<description> The settings to HTML xslt file </description>
+	</context-param>
+
+
+
+	<context-param>
+		<param-name>log</param-name>
+		<param-value>log</param-value>
+		<!-- <description> Where the log files are stored</description> -->
+	</context-param>
+
+
+
+	<!-- Error Handling -->
+
+	<error-page>
+
+		<error-code>500</error-code>
+		<location>/error.jsp</location>
+
+		<error-code>404</error-code>
+		<location>/error.jsp</location>
+
+		<error-code>400</error-code>
+		<location>/error.jsp</location>
+
+		<error-code>403</error-code>
+		<location>/error.jsp</location>
+
+	</error-page>
+
+
+
+	<error-page>
+		<exception-type>java.lang.Exception</exception-type>
+		<location>/errorTimeOut.jsp</location>
+	</error-page>
+
+
+
+</web-app>

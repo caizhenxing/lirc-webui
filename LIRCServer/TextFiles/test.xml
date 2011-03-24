@@ -1,0 +1,15 @@
+<remotes>
+<remote name="Sky">
+<group name="" cols="Nums">
+<command name="1"/>
+<macro name="CNN">
+<command name="5" remote="Sky" order="1"/>
+<command name="1" remote="Sky" order="1"/>
+<command name="3" remote="Sky" order="1"/>
+</macro> 
+</group>
+
+
+</remote>
+
+</remotes>

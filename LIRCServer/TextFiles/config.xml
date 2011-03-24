@@ -1,0 +1,143 @@
+<remotes cols="2" uuid="e622c6ae-561d-43e6-905d-7430146e1037">
+	  <remote name="FrontRoomTV" uuid="fe1f43da-0af6-4133-812a-77fb4c57963d" cols="2">
+	
+	     <group cols="4" name="numbers" uuid="eb3e06b0-1c86-43f0-81e2-4fd627331d90" class="LabelLarge">
+	        <command name="1" uuid="aeb0f497-3939-4f39-997c-66a0d94b3cd9"/>
+			      <command name="2" uuid="85f64621-cb87-48b0-a56b-990ebf19b00c"/>
+			      <command name="3" uuid="2b785704-48d8-4f6a-ac1a-b089932cb48e"/>
+			      <command name="4" uuid="abd32c96-66da-47e2-8df7-f5dabf93179a"/>
+			      <command name="5" uuid="1c3eb133-14c2-4f62-b8df-50e5637f0b29"/>
+			      <command name="6" uuid="ac04f116-18d2-49e4-b128-ffbe81e021e9"/>
+			      <command name="7" uuid="271d9c1c-5820-44c3-8e2a-b016f85a4f93"/>
+			      <command name="8" uuid="89051db1-4338-449f-807d-5c15e2f30b49"/>
+			      <command name="9" uuid="34596073-6295-4ecf-9caf-53a19ba0a364"/>
+			      <command name="0" uuid="977ea57b-6f20-4960-9c94-3e877771bac0"/>
+	     </group>
+	
+		    <group cols="4" name="default" uuid="b4861162-33d1-4dff-b4b3-eb1cc70db9cc">
+			
+			      <command name="red" uuid="fe8d18eb-0190-446f-a88a-2a53890b92c6"/>
+			      <command name="green" uuid="e2dbfe77-1627-4336-a01a-75256d703b8b"/>
+			      <command name="pp" uuid="56c677a5-49a5-49c0-9911-ff16d1df4156"/>
+			      <command name="1-11" uuid="2d9090ef-8418-4096-8de3-7b871843d61c"/>
+			      <command name="p&lt;p" uuid="585c6e26-e528-440d-8e76-edfd5f593a93"/>
+			      <command name="--" uuid="252382cf-0767-465f-9ee3-32b901af6b18"/>
+			      <command name="i" uuid="035509f6-dfd9-44bc-a5dd-6e10d8b0cd9c"/>
+			      <command name="m" uuid="c82cbad1-b2a8-44d3-902c-506b0d89b70c"/>
+			      <command name="p+" uuid="abb13214-d195-4e18-b852-46b279f01be2"/>
+			      <command name="p-" uuid="e27e220c-e5b8-45e6-85da-dec280be6a6d"/>
+			      <command name="scrollLeft" uuid="e067f735-d62c-480c-b535-a8b451d534d6"/>
+			      <command name="scrollRight" uuid="cb6505a3-e635-44c9-bbcc-feaa546a18e5"/>
+			      <command name="vol+" uuid="1d8358a2-8f07-4dfb-b211-e0ac961c076c"/>
+			      <command name="vol-" uuid="98d56770-595a-4be3-8f63-0cef1cdcfaf5"/>
+			      <command name="sm_red" uuid="ae9c2653-2d11-46e2-b237-4c92ad5521f3"/>
+			      <command name="sm_green" uuid="f8d8115a-dcfa-433f-81c6-0db6cb715d7e"/>
+			      <command name="sm_yellow" uuid="fc28777d-508c-4199-b3c4-cc62c0de810d"/>
+			      <command name="sm_blue" uuid="947c9f24-a555-4688-9797-e0e2fa322e7e"/>
+			      <command name="tv" uuid="610fb4fb-4035-4b3c-8a31-d2e9912b6417"/>
+			      <command name="av" uuid="b1f032f8-a8df-41df-9bf1-7393c292eb4a"/>
+			      <command name="tt" uuid="cd6db223-80ff-43bb-8091-1831ed7dc33d"/>
+			      <command name="tt1" uuid="fde34f48-e0cc-4220-ae19-9ed0bf79b74a"/>
+			      <command name="tt2" uuid="08448cc5-74eb-4365-8044-5c7e8e9cb773"/>
+			      <command name="tt3" uuid="5f3960c6-252b-4997-8009-d244fe88bf6a"/>
+			      <command name="tt4" uuid="2a51587c-b49f-48fc-93c5-e22cea92cf09"/>
+			      <command name="tt5" uuid="edee517f-cc41-4e23-bfc7-c340d270860d"/>
+			      <command name="tt6" uuid="6e70c3bd-ed71-4785-ab37-c9082a3cc9ec"/>
+			      <command name="tt7" uuid="ef9df6bb-d506-43d7-8a47-3f077d8053de"/>
+			      <command name="tt8" uuid="50b3e232-1c75-43d9-a306-1083b7306595"/>
+		    </group>
+	  </remote>
+	  <remote name="Samsung_vcr" uuid="564a6767-c818-4d34-ae80-618ec857c1d6">
+		    <group cols="4" name="default" uuid="e719a534-99a1-4c2f-81fe-9ad189a6c489">
+			      <command name="1" uuid="37f20f26-dbdd-4405-b4f5-1277282dea51"/>
+			      <command name="2" uuid="5f98c241-9321-45d6-9814-ef1135376f86"/>
+			      <command name="3" uuid="cb2a337f-fc54-477c-b7fe-f7cc6c33a717"/>
+			      <command name="4" uuid="66501d3b-9a97-4a8d-9126-91aad62f1f64"/>
+			      <command name="5" uuid="8173e4d8-b4d8-4775-ac91-ed9b3c832e7b"/>
+			      <command name="6" uuid="71e2ef09-f7b0-4d06-a058-67666977cfea"/>
+			      <command name="7" uuid="4a3e58bb-1520-4307-9d2b-2c0a273d0536"/>
+			      <command name="8" uuid="c4880ac6-3c83-44a2-a44f-d3b79aa687a7"/>
+			      <command name="9" uuid="544d8fc7-0692-47d1-bbc3-2a56b23b99d8"/>
+			      <command name="0" uuid="6519e43b-10ec-4d0b-85ec-8a2ffe84b645"/>
+			      <command name="pwr" uuid="7a0d80e8-495e-49ec-b5cc-fdc50d414335"/>
+			      <command name="eject" uuid="1ac6aead-6f50-441f-b4bf-4e22963bbcad"/>
+			      <command name="atrak" uuid="68dedf09-47d3-430d-8585-cfb3e708fc88"/>
+			      <command name="ipc" uuid="38fe8a40-3b5f-4498-b60a-b5a6fd67a496"/>
+			      <command name="input" uuid="423c18f8-d2d6-4a8f-b69e-44087940f4ff"/>
+			      <command name="audio" uuid="5521f376-4444-4a23-8020-f469a1af6035"/>
+			      <command name="display" uuid="0269f441-2a39-45a2-bbc3-0d423cb114e7"/>
+			      <command name="trk+" uuid="862fbd07-680c-4987-bae6-097645af6bcc"/>
+			      <command name="trk-" uuid="9a4edccc-4376-419d-ac06-ce5a99071d96"/>
+			      <command name="prog+" uuid="7b5c75fd-2eb1-4676-a385-2de4cbb68b81"/>
+			      <command name="prog-" uuid="293bad3d-d30c-4daa-b9d2-201258e47f29"/>
+			      <command name="rwd" uuid="d8d0df64-1ba3-43af-b171-a96bfa79e785"/>
+			      <command name="stop" uuid="709db22c-0ae1-4d65-a4c0-da28f4dbee8c"/>
+			      <command name="play" uuid="fe8659a0-7436-4574-a0af-69026fa7e217"/>
+			      <command name="ffwd" uuid="df828c60-b9e4-4c17-a21f-4b2fc6acf60e"/>
+			      <command name="rec" uuid="30fef6c4-d567-4e58-bec0-1ba5fa8b8ac2"/>
+			      <command name="menu" uuid="ce8f989b-c31b-4407-b4fd-3af4bd92ede7"/>
+			      <command name="ok" uuid="146c0b80-6770-4c9f-ade8-e71a500b012b"/>
+			      <command name="scrollUp" uuid="6b2d5a79-d15a-4c3e-b800-20672bd5f8f4"/>
+			      <command name="scrollDown" uuid="a1c3cda9-5173-4e76-ab46-d854e7c83635"/>
+			      <command name="scrollLeft" uuid="b665a20e-0859-4d62-a652-db3fd13d2882"/>
+			      <command name="scrollRight" uuid="7bcee793-05c9-4df4-9526-1284f113eae8"/>
+			      <command name="speed" uuid="84d5cde6-255d-4ae0-9269-51811d349565"/>
+			      <command name="dub" uuid="680e7d49-77c4-4154-9e7b-110e37c04b39"/>
+			      <command name="tv-vcr" uuid="e57a2e91-e7d1-4afc-8dbe-300f53b5f3da"/>
+			      <command name="timer" uuid="551b4b18-c6cd-40a3-9c84-8c9dd8126850"/>
+		    </group>
+	  </remote>
+	  <remote name="Sky" uuid="7ad042e2-d1c0-4ec1-8eee-71ce28be44a6">
+		    <group cols="4" name="default" uuid="8f08856d-6289-4a03-841c-264329a8f3a2">
+			      <command name="1" uuid="1bb80fbc-db74-43c2-9907-88e56c836f55"/>
+			      <command name="2" uuid="9746cc87-93ee-49be-8789-2e7216d8ab0c"/>
+			      <command name="3" uuid="fcfe23fc-3de1-4689-a93c-6ea9ec22b32a"/>
+			      <command name="4" uuid="f97563e5-ab9d-4963-aacb-5fd6d9f02472"/>
+			      <command name="5" uuid="7fd059fa-7321-4c3d-b197-e289c4ce452f"/>
+			      <command name="6" uuid="2bd29e1f-ea9b-41b8-9168-c2e8d69bf640"/>
+			      <command name="7" uuid="a75d31b9-87f8-486f-8743-820f78dbda1c"/>
+			      <command name="8" uuid="066b5a99-013c-42da-bff7-9a8f081f0d21"/>
+			      <command name="9" uuid="4732377b-27ea-43a0-983e-dea9a3163240"/>
+			      <command name="0" uuid="9de527ac-c752-478d-839c-abe88a01732d"/>
+			      <command name="info" uuid="3d0dd89e-1c3b-4514-83dd-ab13be9ceaab"/>
+			      <command name="backup" uuid="5e2b253e-2605-4040-bc39-9b0068228ee8"/>
+			      <command name="red" uuid="8b5a7512-505c-4396-b885-39b5d003172f"/>
+			      <command name="green" uuid="01455dc3-2c9d-452e-9123-0db41bf152cb"/>
+			      <command name="yellow" uuid="298e4966-3124-4751-8c86-c9806168326d"/>
+			      <command name="blue" uuid="4b4a3d49-e9cb-4301-badf-5400ebbae46a"/>
+			      <command name="pwr" uuid="d2171b5a-0432-4f9a-95f2-363a82b1f069"/>
+			      <command name="scrollup" uuid="a7dcd5d9-a08a-45ab-b9dc-32e81d0f1c30"/>
+			      <command name="scrolldown" uuid="a5fdd91d-2caf-4278-b137-a1d0af35cc73"/>
+			      <command name="scrollLeft" uuid="9e728734-2f69-4bd9-858e-c7eea51e1214"/>
+			      <command name="scrollRight" uuid="adc5713c-4b38-4a96-9347-65317a5fc64d"/>
+			      <command name="tvguide" uuid="740cdb03-2f44-48b8-95c6-822fa2ecc29b"/>
+			      <command name="boxoffice" uuid="03afbad2-a91e-438c-898a-c6400d3b15c5"/>
+			      <command name="services" uuid="a236d43a-9960-4309-81b6-a0629d5a7a46"/>
+			      <command name="interactive" uuid="b2d7abf2-408b-4b5e-bfd5-195f486d4e5e"/>
+		    </group>
+	  </remote>
+	  <remote name="jvc_hifi" uuid="fc3873e4-e687-48f9-bd7d-96e999342fbb">
+		    <group cols="4" name="default" uuid="4e146994-1e2f-4e80-940c-f2b2e46ff6e6">
+			      <command name="1" uuid="bc244c37-3143-47f9-a3d9-aad4313c1058"/>
+			      <command name="2" uuid="832134d0-06b1-4f19-90dc-fc05ed22669d"/>
+			      <command name="3" uuid="8abdca88-6422-4c76-941e-033e4e4bbbcb"/>
+			      <command name="4" uuid="91a0f7fc-8cab-4289-9d30-e8cfc2332b92"/>
+			      <command name="5" uuid="ca8006dd-21eb-463f-8c12-857a484416e2"/>
+			      <command name="6" uuid="bdb83b73-fbed-454b-aa4f-440be8ce1d76"/>
+			      <command name="7" uuid="030fc11b-f8d9-43ae-97c8-c56c7e709d2d"/>
+			      <command name="8" uuid="e4f517b5-6557-46b6-8386-c4bf4a144888"/>
+			      <command name="9" uuid="42c39bc1-cb45-4dbd-abd8-c278c7fc427a"/>
+			      <command name="10" uuid="24860f57-eb56-40e9-beb8-e594fe186bb4"/>
+			      <command name="10+" uuid="8e3965cb-a9f2-4ae3-ad15-a6e673758242"/>
+			      <command name="sound_mode" uuid="6d35c1ff-ef97-42d7-b817-f1f190789402"/>
+			      <command name="fm_mode" uuid="6e76ebfa-e06f-4a24-87ea-1be844365079"/>
+			      <command name="tuner" uuid="492cac4d-c83e-495c-822e-845bc8155fcd"/>
+			      <command name="aux" uuid="4e9e96b3-1f9e-4711-90bd-9958122ac78a"/>
+			      <command name="program" uuid="04e1e7d2-d97f-4a75-b034-899deeee09c1"/>
+			      <command name="cancel" uuid="d1d43902-54a6-47d4-b3bc-236f74d841d8"/>
+			      <command name="vol+" uuid="4ed1054d-0c14-4274-bff2-90ab60a91fa8"/>
+			      <command name="vol-" uuid="c0fd7294-2912-46cd-80a7-f19b0387328e"/>
+			      <command name="pwr" uuid="e879a2f6-3f02-4ff5-94b0-efcf7af21793"/>
+		    </group>
+	  </remote>
+</remotes>

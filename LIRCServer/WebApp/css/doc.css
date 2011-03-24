@@ -1,0 +1,238 @@
+/* XForms std looks */
+/*tr{width: 100%}
+td{text-align: left; vertical-align: top;}
+td.td_label {width: 15%; font-weight: bold;}
+ div.richtext{width:100%; height:25px;}  
+ td.td_xfInput {width: 100%; font-weight: bold;}
+ input.value {width: 100%;}
+ 
+ input.xfInput_2 {
+font-weight: bold;
+position: absolute;
+right: 0;
+width: 50%;
+text-align: left;}
+label.label{width: 40%;}
+textarea{width:100%; height:300px;}
+.textarea > .value{
+    width:200px;
+    height:25px;
+    }*/
+
+*{font-family: sans-serif; font-size: 10pt;} 
+
+
+textarea.TAEdit_html{width:75%; height:0px; overflow:auto; display:none;}
+span.Edit_html{overflow:auto; display:none; width:0px; height:0px;}
+/*textarea.Edit_html{overflow:auto; display:none; width:0px; height:0px;}*/
+
+input.xfInput {width: 100%;}
+input.xfInput_75 {width: 75%;}
+input.xfInput_75_bold {width: 75%; font-weight: bold;}
+input.xfInput_60 {width: 60%;}
+input.xfInput_50 {width: 50%;}
+input.xfInput_33 {width: 33%;}
+
+.xfInput > .value{width: 100%;}
+.xfInput_75 > .value{width: 75%;}
+.xfInput_75_bold > .value{width: 75%; font-weight: bold;}
+.xfInput_60 > .value{width: 60%;}
+.xfInput_50 > .value{width: 50%;}
+.xfInput_33 > .value{width: 33%;}
+.xfInput_10 > .value{width: 10%;}
+
+.xfTextArea_75  > .value{width: 75%; overflow:auto;}
+.xfTextArea  > .value{width: 100%; overflow:auto;}
+
+div.xhtml_display{width:100%; height:auto;}
+
+.widthCol0 {text-align: left; vertical-align: top;}
+.widthCol5 {width: 5%; text-align: left; vertical-align: top;}
+.widthCol10 {width: 10%; text-align: left; vertical-align: top;}
+.widthCol15 {width: 15%; text-align: left; vertical-align: top;}
+.widthCol20 {width: 20%; text-align: left; vertical-align: top;}
+.widthCol25 {width: 25%; text-align: left; vertical-align: top;}
+.widthCol30 {width: 30%; text-align: left; vertical-align: top;}
+.widthCol40 {width: 40%; text-align: left; vertical-align: top;}
+.widthCol50 {width: 50%; text-align: left; vertical-align: top;}
+.widthCol60 {width: 60%; text-align: left; vertical-align: top;}
+.widthCol70 {width: 70%; text-align: left; vertical-align: top;}
+.widthCol80 {width: 80%; text-align: left; vertical-align: top;}
+.widthCol90 {width: 90%; text-align: left; vertical-align: top;}
+.widthCol100{width: 100%; vertical-align: top;}
+.widthColForm {width: 100%; text-align: left; vertical-align: top;}
+.widthColNoWrap{white-space: nowrap; text-align: left; vertical-align: top;}
+
+/*.widthColLeftHandSide{white-space: nowrap; text-align: left; vertical-align: top;}
+.widthColRightHandSide{width:100% ;text-align: left; vertical-align: top;}
+#MainTable{width: 100%}
+.Tree-Element-Folder{white-space: nowrap;}
+.Tree-Element{white-space: nowrap;}*/
+
+
+.widthColLeftHandSide{width:30% ; white-space: nowrap; text-align: left; vertical-align: top}
+.widthColRightHandSide{width:100% ;text-align: left; vertical-align: top;}
+#MainTable{width:100% ;} */
+.Tree-Element-Folder{}
+.Tree-Element{}
+
+
+.topleftCol{text-align: left; vertical-align: top;}
+
+.tableTop td{text-align: left; vertical-align: top;}
+
+div.rhs{overflow: auto; height: 500px;}
+
+div.rhs1{overflow: auto; height: 300px;}
+label{
+float: left;
+font-weight: bold;
+}
+
+
+form label { 
+	width: 20%;  
+}
+
+.L100{width: 100%}
+
+.pseudoLabel{font-weight: bold;}
+.pseudoLabel_Large{font-weight: bold; font-size: 14pt;}
+.listItem{font-size: 12pt;}
+/*width: 220px;*/
+
+select.xfSelect50{width: 50%;}
+select.xfSelect60{width: 60%;}
+select.xfSelect75{width: 75%;}
+select.xfSelect75_bold{width: 75%;}
+.xfSelect10 > .value{width: 10%; }
+.xfSelect50 > .value{width: 50%; }
+.xfSelect60 > .value{width: 60%; }
+.xfSelect75 > .value{width: 75%; }
+.xfSelect75_bold > .value{width: 75%; font-weight: bold;}
+
+input:disabled { background-color: #ece9d8; color: black; }
+select:disabled { background-color: #ece9d8; color: black; }
+
+#maindiv {
+	overflow: auto; 
+	width: 100%; 
+	height: 80%; 
+	}
+	
+#floater {
+  position:absolute; 
+  visibility: hidden; 
+  top: 0px;
+  left: 0px;
+  }	
+  
+  /*tr.oddrow{background: rgb( 234, 241, 220);}*/
+
+.docTitle{font-size:18.0pt;font-family:Arial;color:silver;font-weight: bold;text-align:center;}
+
+td.W0{}
+td.W5{width: 5%;}
+td.W10{width: 10%;}
+td.W15{width: 15%;}
+td.W20{width: 20%;}
+td.W25{width: 25%;}
+td.W30{width: 30%;}
+td.W35{width: 35%;}
+td.W40{width: 40%;}
+td.W60{width: 60%;}
+td.W70{width: 70%;}
+td.W80{width: 80%;}
+td.W100{width: 100%;}
+
+th.tableheader{
+text-align: left;color:black;
+font-weight: normal;
+background:#E5E5E5;
+padding:0cm 5.4pt 0cm 5.4pt;
+height:15.65pt;
+border:solid windowtext 1.0pt;       
+}
+
+
+td.standardTable_Column{
+	border:solid windowtext 1.0pt;
+	font-size:10.0pt;}
+	
+td.NoBorderTable_Column{
+	border:hidden windowtext 1.0pt;
+	font-size:10.0pt;}	
+
+input.Refresh{display:none; visibility: hidden;}
+.hide{display:none; visibility: hidden;}
+
+.error{color:red;font-size:12.0pt;}
+.field_error{background-color: red;}
+.errorLarge{color:red;font-size:14.0pt;font-weight: bold;text-align:left;}
+
+
+    h1.blue {
+        font-size: 18px;
+        line-height: normal;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        color: #003366;
+        border-bottom: 1px solid #3c78b5;
+        padding: 2px;
+        margin: 36px 0px 4px 0px;
+    }
+    
+        h2.blue {
+        font-size: 12px;
+        line-height: normal;
+        font-weight: bold;
+        background-color: #f0f0f0;
+        color: #003366;
+        border-bottom: 1px solid #3c78b5;
+        padding: 2px;
+        margin: 36px 0px 4px 0px;
+    }
+
+.docTitle{font-size:18.0pt;font-family:Arial;color:darkblue;font-weight: bold;text-align:center;}      
+.docBoldBlue{color:darkblue;font-weight: bold;text-align:left;}
+.docBlue{color:darkblue;text-align:left;}
+.divCenter{text-align:center;}
+.docSubTitle{font-size:14.0pt;font-family:Arial;color:darkblue;font-weight: bold;text-align:center;}
+.docSubSubTitle{font-size:12.0pt;color:darkblue;font-weight: bold;text-align:left;}
+
+.groupSubTitle{font-size:14.0pt;font-family:Arial;color:darkblue;font-weight: bold;text-align:center;}
+.groupSubTitle span{font-size:14.0pt;font-family:Arial;color:darkblue;font-weight: bold;text-align:center;}
+
+.imgLink > img{border:0;}
+
+form.Actionform{height:10px;vertical-align:top;}
+
+table.tableBorder{border-collapse: collapse}
+tr.oddrow{background: rgb( 234, 241, 220);}
+
+th.tableheaderNoBorder{
+text-align: left;color:black;
+font-weight: normal;
+background:#E5E5E5;
+padding:0cm 5.4pt 0cm 5.4pt;
+height:15.65pt;
+border:hidden windowtext 1.0pt;       
+}
+
+/* file browser */
+.fileImg{border:0; width:20; height:20;}
+
+.fileBorder{border:thin solid orange;}
+.fileBack{background-color:#FCF6D3}
+.fileDirTD{vertical-align:middle; colspan:5;}
+.fileheader{background-color:#faeeaa}
+
+.OutlineTable{vertical-align:top; border:thin solid #BCD884;width:100%;}
+.ta_100{width:100%; height:300px;}
+
+.tdYellow{background-color:#faeeaa}
+.tdGreen{background-color:#BCD884}
+
+.highlightSelect{background-color:#faeeaa}
+
+.highlightYellow{background-color:yellow;font-size:12.0pt;font-weight: bold;text-align:left;}

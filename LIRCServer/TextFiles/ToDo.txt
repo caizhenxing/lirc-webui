@@ -1,0 +1,30 @@
+Launch timeout has expired
+Check timeout on http get i.e. is machine there.
+
+
+Crap XML Check
+load settings xml file? For multiple IR Servers. Or just add multiple to Android prefs?
+
+irsend SEND_ONCE  OnkyoAmpli VOL-UP VOL-UP VOL-UP VOL-UP
+
+bookmark ?
+
+Key Bindings - key action/event?
+XSLT - id the 0-9 up down left right add 1 letter per
+@Override 
+public boolean onKeyDown(int i, KeyEvent event) {
+
+      if (i == KeyEvent.KEYCODE_BACK) {
+          return true;
+        else {
+          super.onKeyDown(i, event);
+          return true;
+        }
+      }
+      return false;
+    }
+
+
+XML
+Detail the XML - Schema?
+

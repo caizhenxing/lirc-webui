@@ -1,0 +1,15 @@
+<!-- The contents of this file will be loaded for each web application cookies="false" -->
+<Context cookies="false">
+
+	<!-- Default set of monitored resources -->
+	<WatchedResource>WEB-INF/web.xml</WatchedResource>
+	<WatchedResource>META-INF/context.xml</WatchedResource>
+
+	<!-- Uncomment this to disable session persistence across Tomcat restarts -->
+	<!--
+		<Manager pathname="" />
+	-->
+
+	<!--<Parameter name="xmlprocess.mainxml" value="http://localhost:8080/main.xml" override="false" />-->
+
+</Context>

@@ -1,0 +1,359 @@
+<project name="LircServer" default="finalclean" basedir=".">
+	<import file="${import.file}" optional="true" />
+	<description>
+        
+        Build script for WebApps 
+		
+		Author: Adam Flinton
+		Date:	10 September, 2010
+		
+    </description>
+	<!-- Load environment variables in -->
+	<property name="project.properties" value="buildLircServer.properties" />
+	<property environment="env" />
+	<property file="${project.properties}" />
+	<!-- set global properties for this build -->
+	<property name="project.src.dir" value="src" />
+	<property name="project.ext-lib.dir" value="ext-lib" />
+
+	<!--WebApp Dirs -->
+
+	<!--Internal Only -->
+
+	<property name="jsp.dir" value="jsp" />
+	<property name="project.webapp.dir" value="WebApp" />
+	<property name="project.jsp.dir" value="${project.webapp.dir}/${jsp.dir}" />
+
+	<!-- Possibly External Content -->
+
+	<property name="config.dir" value="config" />
+	<property name="html.dir" value="html" />
+	<!--<property name="jsp-app.dir" value="jsp-app" />-->
+	<property name="css.dir" value="css" />
+	<property name="images.dir" value="images" />
+	<property name="jscripts.dir" value="jscripts" />
+	<property name="xslt.dir" value="xslt" />
+	<!--<property name="ant.dir" value="Ant" />-->
+
+	<!--Project paths -->
+
+	<property name="project.config.dir" value="${project.webapp.dir}/${config.dir}" />
+	<property name="project.html.dir" value="${project.webapp.dir}/${html.dir}" />
+	<!--<property name="project.jsp-app.dir" value="${project.webapp.dir}/${jsp-app.dir}" />-->
+	<property name="project.css.dir" value="${project.webapp.dir}/${css.dir}" />
+	<property name="project.images.dir" value="${project.webapp.dir}/${images.dir}" />
+	<property name="project.jscripts.dir" value="${project.webapp.dir}/${jscripts.dir}" />
+	<property name="project.logging.dir" value="${project.webapp.dir}/logging" />
+	<property name="project.xslt.dir" value="${project.webapp.dir}/${xslt.dir}" />
+	<property name="project.config.dir" value="${project.webapp.dir}/${config.dir}" />
+
+
+	<!-- Web Content -->
+	<property name="project.WebContent.dir" value="WebContent" />
+	<property name="project.Meta-Inf.dir" value="${project.WebContent.dir}/META-INF" />
+	<property name="project.Web-Inf.dir" value="${project.WebContent.dir}/WEB-INF" />
+
+
+
+	<!-- build area-->
+	<property name="build.dir" value="buildarea" />
+	<property name="build.lib.dir" value="${build.dir}/lib" />
+	<property name="build.classes.dir" value="${build.dir}/classes" />
+	<property name="build.dist.dir" value="${build.dir}/dist" />
+	<property name="build.dist.src" value="${build.dir}/dist" />
+	<property name="build.Web-Inf.dir" value="${build.dir}/${project.Web-Inf.dir}" />
+	<property name="build.log.dir" value="${build.Web-Inf.dir}/classes" />
+	<property name="build.files.dir" value="${build.dir}/files" />
+
+
+	<!-- Dist area-->
+	<property name="dist.topdir" value="dist" />
+	<property name="dist.dir" value="${dist.topdir}/${project.name}" />
+	<property name="dist.code" value="${dist.dir}/code" />
+	<property name="dist.src" value="${dist.code}/src" />
+	<property name="dist.war" value="${dist.dir}/war" />
+	<property name="dist.docs" value="${dist.dir}/docs" />
+	<property name="dist.jar.name" value="${project.name}.jar" />
+	<property name="dist.war.name" value="${project.name}.war" />
+	<property name="dist.zip.name" value="${project.name}.zip" />
+
+	<!--Destination directory for Dependant Jars -->
+	<property name="copy.jar.dir" value="${project.here}/${build.lib.dir}" />
+
+
+	<!-- Deploy directory (e.g.  tomcat/webapps-->
+	<!--<property name="deploy.home" value="D:/Programs/Java/j2ee/Tomcat/apache-tomcat-5.5.26/webapps" />-->
+	<!--<property name="deploy.home" value="/opt/java/apps/j2ee/jetty/jetty-6.1.25/jetty-6.1.25/webapps" /> -->
+	<!--build classpath-->
+	<path id="build.cp">
+		<pathelement location="${build.classes.dir}" />
+		<fileset dir="${build.lib.dir}">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="${project.webapp.dir}/ext-lib">
+			<include name="*.jar" />
+		</fileset>
+		<fileset dir="ext-lib">
+			<include name="*.jar" />
+		</fileset>
+	</path>
+	
+	<taskdef resource="net/sf/antcontrib/antlib.xml">
+		<classpath>
+			<pathelement location="./ext-lib/ant-contrib.jar" />
+		</classpath>
+	</taskdef>
+
+	<target name="clean" description="clean up">
+		<delete dir="${build.dir}" failonerror="false" />
+		<delete dir="${dist.topdir}" failonerror="false" />
+		<!--delete file="${dist.zip.name}"/> -->
+		<delete>
+			<fileset dir="." includes="**/*.zip" />
+		</delete>
+		<!-- <echo>Build cp = ${build.cp}</echo> -->
+	</target>
+	<target name="init" depends="clean">
+		<!-- Create the time stamp -->
+		<tstamp />
+		<!-- Create the build directory structure used by compile -->
+		<mkdir dir="${build.dir}" />
+		<mkdir dir="${build.lib.dir}" />
+		<mkdir dir="${build.classes.dir}" />
+		<!-- Create the distribution directory -->
+		<mkdir dir="${dist.topdir}" />
+		<mkdir dir="${dist.dir}" />
+		<mkdir dir="${dist.src}" />
+		<mkdir dir="${dist.war}" />
+
+		
+		<if>
+			<equals arg1="${output.jar}" arg2="yes" />
+			<then>
+				<mkdir dir="${output.jar}" />
+			</then>
+		</if>
+		
+		<property name="src.config.dir" value="${project.config.dir}" />
+		<property name="src.html.dir" value="${project.html.dir}" />
+		<!--<property name="src.jsp-app.dir" value="${project.jsp-app.dir}" />-->
+		<property name="src.css.dir" value="${project.css.dir}" />
+		<property name="src.images.dir" value="${project.images.dir}" />
+		<property name="src.applications.dir" value="${project.applications.dir}" />
+		<property name="src.logging.dir" value="${project.logging.dir}" />
+		<property name="src.xslt.dir" value="${project.xslt.dir}" />
+
+	</target>
+
+
+	<target name="setupDeps" depends="init">
+
+		<!-- copy the only the required jars for the distribution to
+    	build.lib.dir -->
+
+		<echo>build.lib.dir = ${build.lib.dir}</echo>
+		<echo>os.family = ${os.family}</echo>
+		<echo>server.home = ${server.home}</echo>
+		<echo>server.common = ${server.common}</echo>
+		<echo>server.conf.dir = ${server.conf.dir}</echo>
+		<echo>server.common.lib = ${server.common.lib}</echo>
+		<echo>server.config.dir = ${server.config.dir}</echo>
+
+		<!--Copy the project.web-inf to build -->
+
+		<copy todir="${build.Web-Inf.dir}">
+			<fileset dir="${project.Web-Inf.dir}">
+			</fileset>
+		</copy>
+
+		<!-- copy all the files to build -->
+		<mkdir dir="${build.log.dir}" />
+	</target>
+
+
+	<!-- Compile Targets-->
+	<target name="compile" depends="setupDeps" description="compile the source ">
+		<javac destdir="${build.classes.dir}" debug="true" classpathref="build.cp" srcdir="${project.src.dir}" source="1.5" target="1.5">
+		</javac>
+	</target>
+	<target name="jar" depends="compile" description="jar the ${project.name} codebase">
+		<!--copy the properties files-->
+		<property name="full.jar" value="${build.lib.dir}/${dist.jar.name}" />
+		
+		<jar jarfile="${full.jar}" basedir="${build.classes.dir}" />
+		
+		
+		<if>
+			<equals arg1="${output.jar}" arg2="yes" />
+			<then>
+				<copy file="${full.jar}" todir="${output.jar}" overwrite="true" />
+			</then>
+		</if>
+		
+	</target>
+	<!-- End Compile Targets-->
+
+
+	<target name="war" depends="jar" description="war the ${project.name} codebase">
+		<war destfile="${dist.war}/${dist.war.name}" webxml="${build.Web-Inf.dir}/web.xml">
+			<fileset dir="${project.html.dir}" />
+			<fileset dir="${project.jsp.dir}" />
+
+
+			<lib dir="${build.lib.dir}">
+			</lib>
+			<lib dir="${build.Web-Inf.dir}/lib">
+			</lib>
+			<webinf dir="${build.Web-Inf.dir}">
+				<exclude name="web.xml" />
+			</webinf>
+			<metainf dir="${project.Meta-Inf.dir}">
+			</metainf>
+
+			<!-- jscripts -->
+			<zipfileset dir="${project.jscripts.dir}" prefix="${jscripts.dir}" />
+
+			<!-- Possibly External -->
+			<!--<zipfileset dir="${src.images.dir}" prefix="${images.dir}" /> -->
+			<zipfileset dir="${src.config.dir}" prefix="${config.dir}" /> 
+			<zipfileset dir="${src.css.dir}" prefix="${css.dir}" />
+			<zipfileset dir="${src.html.dir}" prefix="${html.dir}" />
+			<!--<zipfileset dir="${src.jsp-app.dir}" prefix="${jsp-app.dir}" />-->
+			<zipfileset dir="${src.xslt.dir}" prefix="${xslt.dir}" />
+
+		</war>
+		<!--First delete the existing War dir-->
+		
+		<if>
+			<isset property="deploy.home" />
+			<then>
+				<echo>"Deploy Home Set  - Deleting ${deploy.home}/${project.name}"</echo>
+						<delete dir="${deploy.home}/${project.name}" failonerror="false" />
+						<!--then delete the existing War -->
+						<delete file="${deploy.home}/${dist.war.name}" failonerror="false" />
+						<copy file="${dist.war}/${dist.war.name}" todir="${deploy.home}" overwrite="true" />
+			</then>
+			<else>
+				<echo>"Deploy Home Not Set - not deploying"</echo>
+				</else>
+		</if>
+		
+		
+		
+	</target>
+
+
+
+
+	<target name="javadoc" depends="war" description="Create the JavaDoc">
+		<javadoc destdir="${dist.docs}" access="protected" windowtitle="${project.name}" use="true" notree="false" nonavbar="false" noindex="false" splitindex="false" author="true" version="true" nodeprecatedlist="false" nodeprecated="false" packagenames="org.xmlprocess.*" sourcepath="${project.src.dir}" classpathref="build.cp" doctitle="XML Process" />
+	</target>
+	<!-- Populate the export directory -->
+	<target name="Copy_to_Dist" depends="javadoc" description="Build the exported directory structure">
+		<!-- Copy the Readme.txt -->
+		<copy file="Readme.txt" todir="${dist.dir}" overwrite="true" />
+		<!-- Copy the buildfiles -->
+		<copy todir="${dist.dir}">
+			<fileset dir=".">
+				<include name="*.xml" />
+				<include name="*.properties" />
+			</fileset>
+		</copy>
+
+		<!-- Copy the source -->
+		<copy todir="${dist.code}/${project.src.dir}">
+			<fileset dir="${project.src.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the config -->
+		<copy todir="${dist.code}/${project.config.dir}">
+			<fileset dir="${project.config.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the ext-lib -->
+		<copy todir="${dist.code}/${project.ext-lib.dir}">
+			<fileset dir="${project.webapp.dir}/${project.ext-lib.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the images -->
+		<copy todir="${dist.code}/${project.images.dir}">
+			<fileset dir="${project.images.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the javascript -->
+		<copy todir="${dist.code}/${project.jscripts.dir}">
+			<fileset dir="${project.jscripts.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the jsp -->
+		<copy todir="${dist.code}/${project.jsp.dir}">
+			<fileset dir="${project.jsp.dir}">
+			</fileset>
+		</copy>
+
+		<!-- Copy the WebContent -->
+		<copy todir="${dist.code}/${project.WebContent.dir}">
+			<fileset dir="${project.WebContent.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the css -->
+		<copy todir="${dist.code}/${project.css.dir}">
+			<fileset dir="${project.css.dir}">
+			</fileset>
+		</copy>
+		<!-- Copy the HTML -->
+		<copy todir="${dist.code}/${project.html.dir}">
+			<fileset dir="${project.html.dir}">
+			</fileset>
+		</copy>
+
+
+
+		<!-- Copy the ExampleXML -->
+		<!--<copy todir="${dist.code}/${project.examples.dir}">
+			<fileset dir="${project.examples.dir}">
+			</fileset>
+		</copy> -->
+	</target>
+	<!-- Zip up files and save to output.file-->
+	<target name="zipupdist" depends="Copy_to_Dist" description="Zip up files and save to output.file">
+		<zip destfile="${project.name}-${DSTAMP}.zip" basedir="${dist.topdir}" />
+	</target>
+	<target name="finalclean" depends="zipupdist" description="final clean up">
+		<delete dir="${build.dir}" failonerror="false" />
+		<!--<delete dir="${dist.topdir}"/> -->
+	</target>
+	<!-- Zip up files and save to output.file-->
+	<target name="CopyToDeployDir" depends="finalclean" description="Copy the War to the deployDir">
+		<!--First delete the existing War dir-->
+		<!--<echo>"Deleting ${deploy.home}/${project.name}"</echo>
+		<delete dir="${deploy.home}/${project.name}" failonerror="false"/>-->
+		<!--then delete the existing War -->
+		<!--<delete file="${deploy.home}/${dist.war.name}" failonerror="false"/> -->
+		<copy file="${dist.war}/${dist.war.name}" todir="${output.TSdir}/wars" overwrite="true" />
+
+	</target>
+
+	<target name="test">
+		<echo> "imported file =  ${import.file}"</echo>
+		<echo> "project.name =  ${project.name}"</echo>
+	</target>
+	<target name="ExportZip" depends="CopyToDeployDir">
+		<echo> "imported file =  ${import.file}"</echo>
+		<echo> "project.name =  ${output.projects}"</echo>
+		<copy todir="${output.projects}" failonerror="false">
+			<fileset dir="." includes="**/*.zip" />
+		</copy>
+	</target>
+
+	<target name="Full" depends="ExportZip">
+		<echo> "Full Build Called"</echo>
+		<echo> "project.name =  ${output.projects}"</echo>
+	</target>
+
+	<target name="Fast" depends="war">
+		<echo> "Fast Build Called"</echo>
+	</target>
+
+
+</project>
