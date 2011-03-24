@@ -1,0 +1,105 @@
+/*    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+    	Log.w(getClass().getSimpleName(), "LircClient onCreateOptionsMenu "); 
+    	//menu.add("BOB");
+    	//MenuItem mi = new MenuItem();
+    	return true;
+    }
+  */  
+
+/*    protected Dialog onCreateDialog(int id) {
+    	
+    	AlertDialog.Builder builder = new AlertDialog.Builder(this);
+    	//AlertDialog alert = builder.create();
+		builder.setMessage("Can not connecto to the server")
+		       .setCancelable(false)
+		       .setPositiveButton("Open Settings?", new DialogInterface.OnClickListener() {
+		           public void onClick(DialogInterface dialog, int id) {
+		        	   openSettings();
+		           }
+		       })
+		       .setNegativeButton("Close Application", new DialogInterface.OnClickListener() {
+		           public void onClick(DialogInterface dialog, int id) {
+		                //dialog.cancel();
+		        	   finish();
+		        	   dialog.cancel();
+		           }
+		       });
+		AlertDialog alert = builder.create();
+		//alert.getOwnerActivity().finish();
+		return alert;
+    	
+    } */
+    
+ /*   public boolean onKeyDown(int keyCode, KeyEvent event) {
+        if (keyCode == KeyEvent.KEYCODE_MENU) {
+            // Do Stuff
+        	Log.w(getClass().getSimpleName(), "LircClient onKeyDown Menu key pressed "); 
+
+        	Intent i = new Intent();
+            i.setClassName("org.xmlprocess.LircClient", StaticRemotesCache.getSettingsIntent());
+            this.startActivity(i);
+        	
+        	return true;
+        } else {
+            return false;
+        } 
+    }*/
+
+		/*LinearLayout layout = new LinearLayout(getContext());
+
+		LinearLayout.LayoutParams params1 = new LinearLayout.LayoutParams(
+				LinearLayout.LayoutParams.WRAP_CONTENT,
+				LinearLayout.LayoutParams.WRAP_CONTENT);
+		params1.gravity = Gravity.LEFT;
+		params1.weight = 1.0f;
+
+		LinearLayout.LayoutParams params2 = new LinearLayout.LayoutParams(80,
+				LinearLayout.LayoutParams.WRAP_CONTENT);
+		params2.gravity = Gravity.RIGHT;
+
+		LinearLayout.LayoutParams params3 = new LinearLayout.LayoutParams(30,
+				LinearLayout.LayoutParams.WRAP_CONTENT);
+		params3.gravity = Gravity.CENTER;
+
+		layout.setPadding(15, 5, 10, 5);
+		layout.setOrientation(LinearLayout.HORIZONTAL);
+
+
+		
+		TextView labelView = new TextView(getContext());
+		labelView.setText(sd.getLabel());
+		labelView.setTextSize(18);
+		labelView.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
+		labelView.setGravity(Gravity.LEFT);
+		labelView.setLayoutParams(params1);
+
+		layout.addView(labelView);
+		
+		EditText labelEdit = new EditText(getContext());
+		labelEdit.setText(sd.getLabel());
+		labelEdit.setTextSize(18);
+		labelEdit.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
+		labelEdit.setGravity(Gravity.LEFT);
+		labelEdit.setLayoutParams(params2);
+		layout.addView(labelEdit);
+		
+		
+		TextView view = new TextView(getContext());
+		view.setText(sd.getUrl());
+		view.setTextSize(18);
+		view.setTypeface(Typeface.SANS_SERIF, Typeface.BOLD);
+		view.setGravity(Gravity.LEFT);
+		view.setLayoutParams(params1);
+
+		layout.addView(view);
+
+		layout.setId(android.R.id.widget_frame); */
+		
+				
+		/*labelView.setOnTouchListener(new OnTouchListener() {
+		    public void onClick(View v) {
+		        // Perform action on clicks
+
+		    }
+		});*/
