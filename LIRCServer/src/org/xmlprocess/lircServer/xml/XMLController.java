@@ -223,7 +223,7 @@ public class XMLController {
 	
 	private ArrayList<String> runCmd(String[] cmds){
 		//ArrayList<String> resultsAr = new ArrayList<String>();
-		
+		le.logCmds(cmds);
 		le.setCommands(cmds);
 		ArrayList<String> resultsAr = le.runCMDs();
 		le.printlines(resultsAr);

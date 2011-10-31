@@ -34,6 +34,18 @@ public class LocalExec {
 		//log.info("leaving pl");
 
 	}
+	
+	public void logCmds(String[] cmds){
+		//logging of the command
+		StringBuilder sb = new StringBuilder();
+		for(int i = 0;i< cmds.length; i++){
+		sb.append(cmds[i]);
+		sb.append(" ");
+		}
+		
+		log.info("logCmds Commands = "+sb.toString());
+		
+	}
 
 	public ArrayList<String> runCMDs() {
 		ArrayList<String> lines = new ArrayList<String>();
@@ -43,6 +55,9 @@ public class LocalExec {
 
 		try {
 			// log.error("execAnt1");
+			
+			logCmds(commands);
+			
 			process = Runtime.getRuntime().exec(commands);
 			// log.error("execAnt2");
 			is = process.getInputStream();
