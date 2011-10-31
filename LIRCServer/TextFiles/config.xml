@@ -1,0 +1,167 @@
+<remotes uuid="e51cbec7-a0a8-4d97-9f4a-ff7ebac51639">
+   <remote name="FrontRoomTV" uuid="593c5f88-7558-4bcb-93e0-d1b9da97f8b4">
+      <group cols="4" name="default" uuid="ba82770b-4595-4a9e-98da-24c558630747">
+         <command label="1" name="1" uuid="53be7d7b-6c69-4ca3-98e3-224e099ffed9"/>
+         <command label="2" name="2" uuid="5e4bb532-4980-49fc-86d0-5b37e85ba019"/>
+         <command label="3" name="3" uuid="fd50fdc4-bf08-4d5c-aa17-b6981a210181"/>
+         <command label="4" name="4" uuid="ac253855-518a-4c46-9c1c-fbb4000bb699"/>
+         <command label="5" name="5" uuid="583df627-475f-4205-b5ca-870d8ff7bdc9"/>
+         <command label="6" name="6" uuid="aedab0fb-d7de-4018-ad86-3fdbd19190cb"/>
+         <command label="7" name="7" uuid="623e3af8-8b1a-4b93-b30d-7b6fea32510d"/>
+         <command label="8" name="8" uuid="13794bb9-0bd2-42ee-beb6-410d72cf8b52"/>
+         <command label="9" name="9" uuid="d4357125-f476-4adc-ab7f-6f9d2d98a3f4"/>
+         <command label="0" name="0" uuid="7c574349-3ae4-475d-8e7b-ce5b24aa8163"/>
+         <command label="red" name="red" uuid="259c0808-b8f4-46ab-b3a1-fea22861af45"/>
+         <command label="green" name="green" uuid="1d914097-37c7-4713-b76a-4f34808c2221"/>
+         <command label="pp" name="pp" uuid="7a6e66a4-9ce4-46e8-92ab-1f535a562cd3"/>
+         <command label="1-11" name="1-11" uuid="85450a08-1eae-450e-af75-abfd9e5d8ee4"/>
+         <command label="p&lt;p" name="p&lt;p" uuid="c927f955-bca7-4375-9402-3893532b02ea"/>
+         <command label="--" name="--" uuid="2e87d215-b86d-4a75-9767-aa8824ff9f46"/>
+         <command label="i" name="i" uuid="359d4416-bed8-4bcb-ab1f-9930a8fda674"/>
+         <command label="m" name="m" uuid="643231b6-b134-43b7-b4e7-e704e29754a4"/>
+         <command label="p+" name="p+" uuid="90086a10-5b2b-41ac-910c-4d531c426b40"/>
+         <command label="p-" name="p-" uuid="06e6cbb6-b807-49a7-ab33-89fe1feaa42a"/>
+         <command label="scrollLeft" name="scrollLeft"
+                  uuid="074e4f73-3060-4922-98b2-657369ab40f5"/>
+         <command label="scrollRight" name="scrollRight"
+                  uuid="a56a0e34-2538-4fde-b1fd-c1ecb2f05171"/>
+         <command label="vol+" name="vol+" uuid="bdb862c0-941f-4672-a80f-d8a10b314fd9"/>
+         <command label="vol-" name="vol-" uuid="4a736526-b6fc-451d-a440-bb3a43f564e2"/>
+         <command label="sm_red" name="sm_red" uuid="9f6c3bb5-0586-48f7-88a6-f8939756a0fe"/>
+         <command label="sm_green" name="sm_green" uuid="daf0350e-6434-4ddd-ba6d-3f049d36a48f"/>
+         <command label="sm_yellow" name="sm_yellow" uuid="fe635983-4d76-487b-a5df-0eaf3ecf1750"/>
+         <command label="sm_blue" name="sm_blue" uuid="88938f60-58d5-4740-96df-3977864c0864"/>
+         <command label="tv" name="tv" uuid="e1339cc1-5e5e-4410-802f-d0befc501ee0"/>
+         <command label="av" name="av" uuid="d918b850-9b81-4759-ae6d-9815953302b7"/>
+         <command label="tt" name="tt" uuid="1d22d8d1-b02e-4759-b922-cb87bba3d24b"/>
+         <command label="tt1" name="tt1" uuid="437306ed-4e1e-4752-a099-f1dac9999358"/>
+         <command label="tt2" name="tt2" uuid="5763978a-ffc8-4e29-9479-adde81387f21"/>
+         <command label="tt3" name="tt3" uuid="df011324-0087-4ac8-80c3-db6e781723ec"/>
+         <command label="tt4" name="tt4" uuid="f1265f19-6a04-440d-b9ef-c42addd92e4f"/>
+         <command label="tt5" name="tt5" uuid="83b5c7e7-3caf-415a-81c5-fe7ad952d25e"/>
+         <command label="tt6" name="tt6" uuid="25ba0828-a96a-43ea-a89e-382622ab028f"/>
+         <command label="tt7" name="tt7" uuid="b5bd2b00-9f28-4162-b973-c948cbfa9b36"/>
+         <command label="tt8" name="tt8" uuid="9454bbef-1041-4faa-ba54-df17b694719f"/>
+      </group>
+   </remote>
+   <remote name="Samsung_vcr" uuid="1a174a9d-ef6d-49ed-aca4-a0fb4184596c">
+      <group cols="4" name="default" uuid="ec7d283c-9d04-45a0-828b-f1fff178e745">
+         <command label="1" name="1" uuid="004425a3-4989-4448-973f-780b48510584"/>
+         <command label="2" name="2" uuid="c5ea13ce-e097-4deb-a534-b4e691f6f828"/>
+         <command label="3" name="3" uuid="f2fe1f78-ea5f-403e-9e06-888c139071bc"/>
+         <command label="4" name="4" uuid="c669bfaf-e827-4b29-adcd-b37b5aa7aba9"/>
+         <command label="5" name="5" uuid="82cbf62b-01fc-4386-bed8-97e1eb6cb4d8"/>
+         <command label="6" name="6" uuid="54c6e36c-ed7d-4706-8e87-8eecc226b5f7"/>
+         <command label="7" name="7" uuid="ead9d9de-ee6d-4c41-9546-9dcd31b95648"/>
+         <command label="8" name="8" uuid="44b0a4df-f9ef-4183-90f7-422c46bf3ab2"/>
+         <command label="9" name="9" uuid="1c24693a-5d96-408c-b6ac-b271f4233a2f"/>
+         <command label="0" name="0" uuid="cae3257b-91f7-4a08-9d24-4d3347c1abd3"/>
+         <command label="pwr" name="pwr" uuid="51a4960c-2965-45e4-9a9e-be9a5e807296"/>
+         <command label="eject" name="eject" uuid="860b2780-ab37-4856-a5ac-4b5ffb486109"/>
+         <command label="atrak" name="atrak" uuid="1a9d13c1-b2e5-48fe-87e9-c0164c2d9712"/>
+         <command label="ipc" name="ipc" uuid="b5c87e8d-52fd-49ad-881b-bc9d97a8510d"/>
+         <command label="input" name="input" uuid="0ed39763-bc20-4799-9aea-991320b232f3"/>
+         <command label="audio" name="audio" uuid="ebd79bd0-979f-4891-b0cd-b0b5fa9bbbca"/>
+         <command label="display" name="display" uuid="69f01123-6929-4bb9-82bf-23d9c7571473"/>
+         <command label="trk+" name="trk+" uuid="2f0e93d0-3292-4831-a20e-79fc2a6e01be"/>
+         <command label="trk-" name="trk-" uuid="9a92012e-36ef-428e-8a8a-b1ca408d9560"/>
+         <command label="prog+" name="prog+" uuid="b52de68c-9b7e-4eff-aa76-c41cf15d5e73"/>
+         <command label="prog-" name="prog-" uuid="c3dd148e-fa78-4470-9c77-7d7a35d76ae4"/>
+         <command label="rwd" name="rwd" uuid="1efdb650-5161-4c00-8279-ea4ec0aa991d"/>
+         <command label="stop" name="stop" uuid="1882980b-3cd3-4130-8df1-25fa11f61799"/>
+         <command label="play" name="play" uuid="dec48049-9676-4b19-b015-48c727343f69"/>
+         <command label="ffwd" name="ffwd" uuid="a8e1f7a1-c3cc-460f-903a-41d629e69180"/>
+         <command label="rec" name="rec" uuid="98d3fc9a-a67c-4d53-b744-1e1f67298698"/>
+         <command label="menu" name="menu" uuid="6c966570-a879-42f2-b262-9d578fe67cbe"/>
+         <command label="ok" name="ok" uuid="96f24483-29c3-4ab7-9500-6ca0c01b1385"/>
+         <command label="sc_Up" name="sc_Up" uuid="a534f685-80be-469c-819f-f51443d78ca9"/>
+         <command label="sc_Down" name="sc_Down" uuid="8c3f33e3-3a27-4dbf-b0b9-fcc43de8d67f"/>
+         <command label="sc_Left" name="sc_Left" uuid="6e539cfc-8b13-4190-9c95-622440fe6108"/>
+         <command label="sc_Right" name="sc_Right" uuid="2a27e89a-0ff7-4056-be8e-ab26e7a71b2b"/>
+         <command label="speed" name="speed" uuid="cab1e9a5-88e3-4aa7-a245-3d5b19eaead9"/>
+         <command label="dub" name="dub" uuid="9382b0f6-51a3-449b-97da-e84c43483108"/>
+         <command label="tv-vcr" name="tv-vcr" uuid="546391e4-a5be-4cd6-8d4b-18750c151a6e"/>
+         <command label="timer" name="timer" uuid="34bce96f-d6e6-472f-bc84-898ddce67d37"/>
+      </group>
+   </remote>
+   <remote name="Sky" uuid="1cbb31b5-ccb3-4971-9e06-a5dbff7c0952">
+      <group cols="4" name="default" uuid="c9282b16-c18f-4855-bc1a-cf911bb0f642">
+         <command label="1" name="1" uuid="568c35c5-b81f-441a-812a-eb5037c6c95b"/>
+         <command label="2" name="2" uuid="276b251a-68cf-4263-ada6-6788cc73eb33"/>
+         <command label="3" name="3" uuid="2340a990-9715-46de-a280-2886c04593b7"/>
+         <command label="4" name="4" uuid="ab734bf1-106c-4bb1-912f-922b11765dd2"/>
+         <command label="5" name="5" uuid="091dc60d-a172-422d-86de-3c84ebef4363"/>
+         <command label="6" name="6" uuid="d41c3e0f-dff4-402d-8412-204c31c56912"/>
+         <command label="7" name="7" uuid="c4a3e2e8-f6f9-44ff-afd8-0b04d55439de"/>
+         <command label="8" name="8" uuid="eb394bc2-4b31-4b0b-b23a-6b464317db20"/>
+         <command label="9" name="9" uuid="980f95db-098e-4966-8089-902c8f3892eb"/>
+         <command label="O" name="O" uuid="3b16a8ce-ba40-4e12-968f-119fa8802632"/>
+         <command label="OK" name="OK" uuid="6da4bbd3-dcda-4ff4-befd-5d242646bede"/>
+         <command label="info" name="info" uuid="1e020a71-3e06-427c-8c5c-c69419695de8"/>
+         <command label="backup" name="backup" uuid="ab7edbc2-c733-45ac-a15e-fd415e73b7c9"/>
+         <command label="red" name="red" uuid="f59e64fe-a354-4bce-aae3-eef63bf6f0d3"/>
+         <command label="green" name="green" uuid="a1baf286-c25a-4734-a720-5f1d1da98648"/>
+         <command label="yellow" name="yellow" uuid="943097d5-0938-4a23-be2e-b00c9e942929"/>
+         <command label="blue" name="blue" uuid="389d6b8f-0576-4d9e-acb8-930231b9c372"/>
+         <command label="pwr" name="pwr" uuid="417b7e33-f885-4c0c-a4bf-239e236f63f4"/>
+         <command label="up" name="up" uuid="7a181bbe-e4aa-46c0-88d7-35b0cad2e31c"/>
+         <command label="down" name="down" uuid="066a8ac9-7e6a-4fb4-92c4-279f7ff68435"/>
+         <command label="left" name="left" uuid="f6a4c0ed-92a5-40a4-9c59-9a7ab60cd598"/>
+         <command label="right" name="right" uuid="27b39395-64e5-457d-8b31-c84cd7163c62"/>
+         <command label="tvguide" name="tvguide" uuid="f66d5393-66f7-4950-abea-740fd655c5c1"/>
+         <command label="boxoff" name="boxoff" uuid="02747089-348d-4c76-9f6c-6f5dc3e55986"/>
+         <command label="service" name="service" uuid="17b974b6-bb66-4c39-b5f0-1aa2fc7280e0"/>
+         <command label="interact" name="interact" uuid="5eb01f41-0641-4559-b30f-b8bac25217fc"/>
+      </group>
+   </remote>
+   <remote name="dvd" uuid="2ec39a1c-e6e7-4123-844b-45d3a62227f6">
+      <group cols="4" name="default" uuid="80548044-7b5f-4b3d-934b-0a11926daa91">
+         <command label="PWR" name="PWR" uuid="126d15a3-f9fe-499f-a1b6-c7b3f660415a"/>
+         <command label="OSD" name="OSD" uuid="d0afa866-5342-451c-b47e-209fb2d2a54a"/>
+         <command label="MUTE" name="MUTE" uuid="3d23258b-a310-40d5-88c0-8a9d272d456c"/>
+         <command label="Open/Close" name="Open/Close"
+                  uuid="1ed52604-6bb7-4e53-bca9-b9c1b1d249f8"/>
+         <command label="repeat" name="repeat" uuid="11d7c804-a9d4-415a-a3dd-db1941761ed3"/>
+         <command label="A-B" name="A-B" uuid="643518ee-f97c-4379-b8e4-a5f8f3c40bc1"/>
+         <command label="return" name="return" uuid="410cd46c-26e8-4506-ad73-3989e72afab1"/>
+         <command label="audio" name="audio" uuid="7c7f06b0-2ef6-44b1-9f5b-8f233d52416c"/>
+         <command label="1" name="1" uuid="b89e602d-7abe-48e9-b551-4bf456be11af"/>
+         <command label="2" name="2" uuid="357a82fb-7a8f-4d4b-90ba-b9589a2f49ed"/>
+         <command label="3" name="3" uuid="3576319a-be9c-422c-92cd-f90a8ce4477a"/>
+         <command label="4" name="4" uuid="165c259d-536d-49c2-be48-fa7c5b57161a"/>
+         <command label="5" name="5" uuid="2ca10cfb-4208-402a-825b-fe381230eb6d"/>
+         <command label="6" name="6" uuid="94b1aa42-8303-4b8e-a105-13906f26bda9"/>
+         <command label="7" name="7" uuid="aae34b40-69ab-46c5-8d25-e99013dd1fb7"/>
+         <command label="8" name="8" uuid="ca323a61-5960-4387-b683-7ffa00f46695"/>
+         <command label="9" name="9" uuid="bfca7b11-eaf7-4f0e-8969-3016c48b95d9"/>
+         <command label="0" name="0" uuid="fbfbea20-d5c7-4b81-adde-f200a4fa2a8a"/>
+         <command label="src" name="src" uuid="d56edcb5-ef5b-4acc-afa5-161fda6cfe0e"/>
+         <command label="subT" name="subT" uuid="a1283620-1583-47eb-bea9-9f17009fdf27"/>
+         <command label="angle" name="angle" uuid="b04eb7c1-8cb7-4b32-8580-5ef07623ed10"/>
+         <command label="goto" name="goto" uuid="fe14331f-8496-4b68-a341-7fd11b272088"/>
+         <command label="clr" name="clr" uuid="6ccef697-b73b-49f4-acad-54a5e5475fee"/>
+         <command label="title" name="title" uuid="9681adb6-f58a-4fb6-b77f-4e2bb16f705d"/>
+         <command label="play" name="play" uuid="4d62e549-47ad-4087-8683-6396da56ac25"/>
+         <command label="stop" name="stop" uuid="47288409-b195-40d4-b514-8ec35c365b94"/>
+         <command label="slow" name="slow" uuid="a45950e3-797a-4317-af16-9c64c5ac87bf"/>
+         <command label="step" name="step" uuid="97c43b8c-f492-4cb1-87bc-919755affab8"/>
+         <command label="rev" name="rev" uuid="50b69c82-197d-4c6d-9c7c-102887981f49"/>
+         <command label="fwd" name="fwd" uuid="06721589-a2b7-4d39-a7eb-e67251d9c625"/>
+         <command label="prev" name="prev" uuid="77a99316-f398-447f-83ee-1fe3c6c05d17"/>
+         <command label="next" name="next" uuid="67a3423e-e416-464a-b5cb-8ce74cf10d7a"/>
+         <command label="menu" name="menu" uuid="838a9089-c759-40bb-8763-ba528f763b56"/>
+         <command label="prog" name="prog" uuid="9639c519-ca5c-46b7-be2f-1aedece127a2"/>
+         <command label="setup" name="setup" uuid="575372cf-77fa-46c2-a450-2a5df9e668ee"/>
+         <command label="zoom" name="zoom" uuid="9c1f763a-6030-4397-bf87-0b01edff7bb1"/>
+         <command label="vmode" name="vmode" uuid="d2447181-4162-4d77-82f4-96e90d9a2b69"/>
+         <command label="hdmi" name="hdmi" uuid="4ac09a65-e6fe-4309-979b-a65e488e4056"/>
+         <command label="vol-" name="vol-" uuid="ca0142f3-1310-44ef-8179-5790992ad93a"/>
+         <command label="vol+" name="vol+" uuid="11f0be52-09a5-4f3c-b606-5cc06dd4eec0"/>
+         <command label="up" name="up" uuid="5f7a41d3-8242-43f0-951a-aee0fd5aea3d"/>
+         <command label="down" name="down" uuid="379fe09c-d657-4bdb-ac47-763e1b098046"/>
+         <command label="left" name="left" uuid="152cc3f7-ce83-4e21-a9d8-abc49d76bf94"/>
+         <command label="right" name="right" uuid="2d41c07a-23bc-4f57-85ac-0984303ee0c0"/>
+         <command label="ok" name="ok" uuid="7457f859-ac38-4943-b792-74e2181cb9b2"/>
+      </group>
+   </remote>
+</remotes>
