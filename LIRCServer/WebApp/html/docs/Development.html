@@ -1,0 +1,239 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+  <link type="text/css" rel="stylesheet" href="Doc.css" />
+
+  <meta content="text/html; charset=UTF-8" http-equiv="content-type" />
+  <title>XML Process Development</title>
+
+
+</head>
+
+
+<body>
+
+<div class="divCenter"><span class="docTitle">XMLProcess
+Development</span><br />
+
+</div>
+
+<br />
+
+<span class="docSubTitle">
+Plans and thoughts regarding XMLProcess Development</span>
+<h1><a name="Table_of_Contents" class="docSubTitle">Table
+of Contents:</a></h1>
+
+<ul class="docSubSubTitle">
+
+  <li><a href="#Overview">Overview</a></li>
+
+  <li><a href="#Areas">Development Areas</a>
+    <ul>
+
+      <li><a href="#General">General</a></li>
+
+      <li><a href="#Java">Java</a></li>
+
+      <li><a href="#XML">XML Handling</a></li>
+
+      <li><a href="#JSF">JSF - MyFaces</a></li>
+
+      <li><a href="#XForm">Chiba / XForms</a></li>
+
+      <li><a href="#Eclipse">Eclipse</a></li>
+
+      <li><a href="#FileIO">FileIO</a></li>
+
+    </ul>
+
+  </li>
+
+</ul>
+
+<h1><a class="docSubTitle" href="#Table_of_Contents" name="Overview">Overview</a></h1>
+
+<br />
+
+<span class="docBoldBlue">This page deals with
+development issues and if you are looking to help
+develop, maintain or even document XMLProcess then you are my favourite
+sort of person</span>
+<h1><a class="docSubTitle" href="#Table_of_Contents" name="Areas">Development Areas</a></h1>
+
+There are a number of areas in which development could occur within
+XMLProcess and it is probably simplest if these are split out as
+different people have skills in different areas. <br />
+
+Each item is given an ease of implementation and an importance ranking
+so people can decide to do an easy but low importance item or a high
+importance item etc.
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="General">General</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Dynamic redeploy
+using
+Ant</span> -easy -low</li>
+
+  <li><span class="docBoldBlue">Tie into local
+Search Engine</span> e.g. google desktop. Depends
+on Dynamic Typing -easy -low</li>
+
+  <li><span class="docBoldBlue">Dynamic typing.</span>
+Check xml against backing files for a match
+-hard - high</li>
+
+  <li><span class="docBoldBlue">Virtual Document.</span>
+A server could create a Virtual Document
+served in chunks -hard -low</li>
+
+  <li><span class="docBoldBlue">Backing File element
+handling.</span> How to handle XML element
+creation such as: <br />
+
+Choice, order, If element A then no Element B etc. -hard -medium</li>
+
+  <li><span class="docBoldBlue">Filter tree.</span>
+Given a user the ability to filter out only
+those items they are interested in -medium -medium</li>
+
+  <li><span class="docBoldBlue">Suppport IE.</span>
+Currently only tested to work on Firefox due
+to JavaScript and CSS differences. Possibly just target IE7 -hard
+-medium </li>
+
+</ul>
+
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="Java">Java</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Clean up existing
+code.</span> Remove dead methods and fields etc -easy -high</li>
+
+  <li><span class="docBoldBlue">Optimise code for
+speed and efficiency.</span> -hard -high</li>
+
+  <li><span class="docBoldBlue">JavaDoc.</span>
+Much of the code needs documenting -easy - high</li>
+
+  <li><span class="docBoldBlue">Check with
+Checkstyle/PMD for correct naming etc.</span> Need to check code
+with standard code quality tools and
+then make the changes -easy -high</li>
+
+</ul>
+
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="XML">XML Handling</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Default namespace
+handling.</span> Currently the code strips off default namespaces
+and then re-applies them when the document is saved.<br />
+
+Could be configurable but should handle default namespaces by creating
+fake prefixes when required -hard -medium</li>
+
+  <li><span class="docBoldBlue">W3C Schema/Relax
+useage.</span> Currently schemas are not used outside of XForms
+(for typing) - could be used to build documents -hard -medium</li>
+
+</ul>
+
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="JSF">JSF - MyFaces</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Move to a newer
+version of MyFaces.</span> The current version is not XML
+compliant in it's output. For example an input is rendered as <br />
+
+&lt;input name="jsf_viewid" id="jsf_viewid" value="/XFormMain.jsp"
+type="hidden"&gt; -medium -high</li>
+
+  <li><span class="docBoldBlue">Write a JSF library
+to make editing XML Elements easier and prettier if a JSFEditor is
+required.</span> -hard -low</li>
+
+  <li><span class="docBoldBlue">Layout - XFormMain.</span> At the moment this is using JSP to do
+the layout Consider a more flexible route e.g. portlets etc ? -hard -low</li>
+
+  <li><span class="docBoldBlue">Use of Facelets.</span> Mostly to trap JSP errors but also
+possibly for use in layout.</li>
+
+</ul>
+
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="XForm">Chiba - XForms</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Move to Chiba 2.0.</span>
+    <br />
+
+Requires Java 1.5.<br />
+
+Means rewriting XFormHTMLProcessor <br />
+
+Many advantages -easy -high</li>
+
+  <li><span class="docBoldBlue">Look at how best to
+externalise Chiba so that newer versions can be integrated easily.</span>
+-medium -high</li>
+
+  <li><span class="docBoldBlue">If moving to Chiba
+2.0 check that the XForms mediatype="text/html" is handled and that FCK
+is OK</span> -easy -high</li>
+
+  <li><span class="docBoldBlue">See if there is a
+way of detecting a native XForms handler.</span> -hard -low</li>
+
+</ul>
+
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="Eclipse">Eclipse</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Package up
+application as a plugin.</span> <a href="http://www.eclipsezone.com/eclipse/forums/t62852.html">See
+here for details</a>. Dependant upon the Dynamic Typing or an
+eclipse class which can do that -medium -high</li>
+
+</ul>
+
+<h4><a class="docSubSubTitle" href="#Table_of_Contents" name="FileIO">FileIO</a></h4>
+
+<ul>
+
+  <li><span class="docBoldBlue">Create new FileIO
+handlers including the Java Classes and the JSF Pages.</span>
+&nbsp;The architecture allows for any file source/sink but only
+file is implemented at the moment.<br />
+
+Ideas include:
+    <ul>
+
+      <li>Subversion</li>
+
+      <li>CVS</li>
+
+      <li>JMS</li>
+
+      <li>WebService</li>
+
+      <li>FTP</li>
+
+      <li>SQL Database</li>
+
+      <li>JNDI</li>
+
+    </ul>
+
+  </li>
+
+</ul>
+
+</body>
+</html>
