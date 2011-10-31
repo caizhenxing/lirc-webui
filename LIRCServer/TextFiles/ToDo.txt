@@ -1,5 +1,14 @@
+Documentation:
+have a restart server command option in settings
+Detail the XML - Schema?
+
+
+
 Launch timeout has expired
 Check timeout on http get i.e. is machine there.
+
+
+
 
 
 Crap XML Check
@@ -26,5 +35,5 @@ public boolean onKeyDown(int i, KeyEvent event) {
 
 
 XML
-Detail the XML - Schema?
+
 
