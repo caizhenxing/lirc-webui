@@ -33,6 +33,9 @@ public class XMLController {
 
 	LocalExec le = new LocalExec();
 	
+	//time in between multiple commands to give lirc a chance to finish
+	private int sleep = 1000;
+	
 	
 	public void init(){
 		/*if(isIrOK()){
@@ -223,7 +226,8 @@ public class XMLController {
 	
 	private ArrayList<String> runCmd(String[] cmds){
 		//ArrayList<String> resultsAr = new ArrayList<String>();
-		le.logCmds(cmds);
+		//log.info("XMLController runCMD");
+		//le.logCmds(cmds);
 		le.setCommands(cmds);
 		ArrayList<String> resultsAr = le.runCMDs();
 		le.printlines(resultsAr);
@@ -657,8 +661,24 @@ public class XMLController {
 		//printStringArray(ccd.getCmds());	
 		
 		sb.append(runCmd(ccd.getCmds()));
+		try
+		{
+		Thread.sleep(getSleep());
+		}
+		catch(InterruptedException e)
+		{
+		e.printStackTrace();
+		}
 	}
 		return sb.toString();
+	}
+
+	public int getSleep() {
+		return sleep;
+	}
+
+	public void setSleep(int sleep) {
+		this.sleep = sleep;
 	}
 
 }

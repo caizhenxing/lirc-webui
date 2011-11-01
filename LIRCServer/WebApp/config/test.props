@@ -1,10 +1,10 @@
 
 xmlFile=config-www.xml
 
-xmlDir=D\:/Data/ATestXML/test/Lirc/xml
-#xmlDir=/opt/java/j2ee/lircServer/xml
+#xmlDir=D\:/Data/ATestXML/test/Lirc/xml
+xmlDir=/opt/java/j2ee/lircServer/xml
 
 irsend=irsend
 
-lircDir=D\:/Data/ATestXML/test/Lirc/lirc
-#lircDir=/usr/bin
+#lircDir=D\:/Data/ATestXML/test/Lirc/lirc
+lircDir=/usr/bin

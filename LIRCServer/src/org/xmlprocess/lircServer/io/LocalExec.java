@@ -27,9 +27,11 @@ public class LocalExec {
 
 	public void printlines(ArrayList<String> lines) {
 
+		if(lines.size() > 0){
 		log.info("number of lines = " + lines.size());
 		for (final Iterator<String> it1 = lines.iterator(); it1.hasNext();) {
 			log.info(it1.next());
+		}
 		}
 		//log.info("leaving pl");
 
@@ -55,7 +57,7 @@ public class LocalExec {
 
 		try {
 			// log.error("execAnt1");
-			
+			log.info("LocalExec runCMDs");
 			logCmds(commands);
 			
 			process = Runtime.getRuntime().exec(commands);
