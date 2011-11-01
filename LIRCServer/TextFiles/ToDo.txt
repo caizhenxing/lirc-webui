@@ -1,8 +1,16 @@
 Documentation:
 have a restart server command option in settings
 Detail the XML - Schema?
+Server taking too long to load. refesh button etc.
 
 
+inst2xsd  -design ss -simple-content-types string  -outPrefix config-ss D:\Data\Java\workspaces\3.6-Home\LIRCServer\TextFiles\config-www.xml 
+
+inst2xsd  -design ss -simple-content-types string  -outPrefix config-ss D:\Data\Java\workspaces\3.6-Home\LIRCServer\TextFiles D:\Data\Java\workspaces\3.6-Home\LIRCServer\TextFiles\config-www.xml 
+
+
+
+inst2xsd  -design ss -simple-content-types string  -outPrefix config-ss config-www.xml
 
 Launch timeout has expired
 Check timeout on http get i.e. is machine there.
