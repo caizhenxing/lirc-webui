@@ -61,6 +61,10 @@ public class LocalExec {
 			logCmds(commands);
 			
 			process = Runtime.getRuntime().exec(commands);
+			
+			
+			//process.exitValue()
+			
 			// log.error("execAnt2");
 			is = process.getInputStream();
 			es = process.getErrorStream();
@@ -68,6 +72,12 @@ public class LocalExec {
 			BufferedReader errReader = new BufferedReader(
 					new InputStreamReader(es));
 
+			//wait till the process has finished
+			
+			int exiti = process.waitFor();
+			log.info("exiti = "+exiti);
+			
+			
 			// Read and print the output
 			String line = null;
 			// log.error("execAnt3");

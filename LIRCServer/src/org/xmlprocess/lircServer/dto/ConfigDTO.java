@@ -22,6 +22,7 @@ public class ConfigDTO {
 	public String xmlDir;
 	public String xmlFile;
 	public String xmlPath;
+	public String sleep;
 	public Hashtable<String, ArrayList<String>> errsHT = new Hashtable<String, ArrayList<String>>();
 
 	public boolean[] testIRpath;
@@ -177,6 +178,13 @@ public class ConfigDTO {
 		getXmlPath();
 
 		writeProps();
+	}
+	public String getSleep() {
+		sleep = getProp(CommonStatics.SLEEP, "500");
+		return sleep;
+	}
+	public void setSleep(String sleep) {
+		this.sleep = sleep;
 	}
 
 }

@@ -8,3 +8,5 @@ irsend=irsend
 
 #lircDir=D\:/Data/ATestXML/test/Lirc/lirc
 lircDir=/usr/bin
+# sleep time
+sleep=1000

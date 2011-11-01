@@ -1,7 +1,8 @@
 Documentation:
 have a restart server command option in settings
 Detail the XML - Schema?
-Server taking too long to load. refesh button etc.
+Server taking too long to load. refresh button etc. android try more times?
+property for time out?
 
 
 inst2xsd  -design ss -simple-content-types string  -outPrefix config-ss D:\Data\Java\workspaces\3.6-Home\LIRCServer\TextFiles\config-www.xml 

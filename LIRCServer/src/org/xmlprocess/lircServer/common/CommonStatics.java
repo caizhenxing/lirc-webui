@@ -41,6 +41,8 @@ public class CommonStatics {
 	public static String CREATE_XML = "createXML";
 	/** Reset XML*/
 	public static String RESET_XML = "resetXML";
+	/** Reset sleep int*/
+	public static String SLEEP = "sleep";
 	
 	
 	
