@@ -1,0 +1,1 @@
+A Java based web app which produces a web based UI and an android based UI for controlling infra-red based appliance (TV, Video, DVD etc) using LIRC (www.lirc.org/)
